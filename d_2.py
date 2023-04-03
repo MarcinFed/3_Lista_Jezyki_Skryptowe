@@ -8,4 +8,4 @@ def get_entries_by_code (logs, parameter):
                 entries.append(entrie)
         return entries
     else:
-        return "Błędny kod statusu"
+        raise Exception("Błędny kod statusu")

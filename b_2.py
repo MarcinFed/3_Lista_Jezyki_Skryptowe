@@ -3,5 +3,5 @@ def sort_log (logs, parameter):
         sorted_log = sorted(logs, key=lambda x: x[parameter])
         return sorted_log
     except IndexError:
-        return "Podana liczba przekracza rozmiar krotki"
+        raise Exception("Podana liczba przekracza rozmiar krotki")
 
